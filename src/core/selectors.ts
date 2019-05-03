@@ -1,22 +1,18 @@
-import { compose, prop, defaultTo } from 'lodash/fp'
-import { defaultState } from './reducer'
+import { compose, prop } from 'lodash/fp'
 
-export const todoState = compose(
-  defaultTo(defaultState),
-  prop('todoState')
-)
+const root = (state: any) => state
 
 export const getTodoListItems = compose(
   prop('todoItems'),
-  todoState
+  root
 )
 
 export const getTodoListName = compose(
   prop('todoListName'),
-  todoState
+  root
 )
 
 export const getUser = compose(
   prop('user'),
-  todoState
+  root
 )
