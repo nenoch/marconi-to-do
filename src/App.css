@@ -1,0 +1,63 @@
+.TodoListCard {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.6rem 2rem 0 rgba(152, 152, 152, 0.5);
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.ProfileCol {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.ProfileCol h6 {
+  padding-left: 0.5rem;
+}
+
+.ListHeader {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+  background: violet;
+  min-height: 10rem;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
