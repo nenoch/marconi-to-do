@@ -1,6 +1,7 @@
 import { compose, prop } from 'lodash/fp'
+import { TodoStateType } from './reducer';
 
-const root = (state: any) => state
+const root = (state: TodoStateType) => state
 
 export const getTodoListItems = compose(
   prop('todoItems'),

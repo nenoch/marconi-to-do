@@ -22,7 +22,7 @@ const todoitem = {
   isCompleted: false
 }
 
-export const defaultState: any = {
+export const defaultState: TodoStateType = {
   user: defaultUser,
   todoListName: 'Team To-Do List',
   todoItems: [todoitem]
@@ -34,7 +34,7 @@ export const reducer = (
 ): TodoStateType => {
   switch (action.type) {
     case ActionTypes.ADD: {
-      const newTodo = createTodo(action.payload.content)
+      const newTodo = createTodo(action.payload.text)
       const updatedList = state.todoItems.concat(newTodo)
       return {
         ...state,
