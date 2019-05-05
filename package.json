@@ -42,7 +42,9 @@
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
     "@types/react-redux": "^5.0.6",
+    "chai": "^4.2.0",
     "css-loader": "^2.1.1",
+    "mocha": "^6.1.4",
     "redux-devtools-extension": "^2.13.8"
   }
 }

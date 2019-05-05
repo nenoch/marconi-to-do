@@ -15,18 +15,20 @@ export const AddItem: React.SFC<AddItemProps> = ({
         inputElRef.value = ''
     }
     return (
-        <>
+        <div>
             <form onSubmit={handleSubmit}>
                 <button
+                    className='BorderNone'
                     type="submit"
                 >
                     <FontAwesomeIcon icon='plus-circle' />
                 </button>
                 <input
+                    className='BorderNone'
                     type='text'
                     placeholder='Add To-Do'
                     ref={(input) => inputElRef = input} />
             </form>
-        </>
+        </div>
     )
 }

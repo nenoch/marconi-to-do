@@ -18,7 +18,7 @@ const defaultUser = {
 
 const todoitem = {
   id: '1234',
-  text: 'shortlist feature for MVP',
+  text: 'example To-Do item',
   isCompleted: false
 }
 

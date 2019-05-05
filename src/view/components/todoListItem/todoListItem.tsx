@@ -14,19 +14,20 @@ export const TodoListItem: React.SFC<TodoItemProps> = ({
     onTick,
     onDelete
 }) => (
-        <li>
-            <label>
-                <input type="checkbox"
-                    onChange={onTick}
-                />
-                <span style={{
+        <div className='TodoListItem'>
+            <input type="checkbox"
+                onChange={onTick}
+            />
+            <h6
+                className='PaddingLeft'
+                style={{
                     textDecoration: isCompleted ? 'line-through' : 'none'
-                }}>{text}</span>
-            </label>
+                }}>{text}</h6>
             <button
+                className='BorderNone'
                 onClick={onDelete}
             >
                 <FontAwesomeIcon icon='trash-alt' />
             </button>
-        </li>
+        </div>
     )

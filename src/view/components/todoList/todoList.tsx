@@ -39,22 +39,26 @@ export const TodoListBase: React.SFC<TodoListProps> = ({
     return (
         <Row className='TodoListCard'>
             <Col xs={3}>
-                <Row className='ProfileCol'>
+                <Row className='Profile'>
                     <Image src={process.env.PUBLIC_URL + user.imagePath} alt='user_img' roundedCircle />
-                    <h6>{user.name}</h6>
+                    <h6 className='PaddingLeft'>
+                        {user.name}
+                    </h6>
                 </Row>
-                <Row>
-                    <FontAwesomeIcon icon='list-ul' />
-                    <h6>{todoListName}</h6>
+                <Row className='ProfileList'>
+                    <FontAwesomeIcon
+                        icon='list-ul' />
+                    <h6 className='PaddingLeft'>
+                        {todoListName}
+                    </h6>
                 </Row>
             </Col>
             <Col xs={9}>
-                <Row className='ListHeader'>
+                <Row className='TodoListHeader'>
                     <h3>{todoListName}</h3>
                     <p>{dateNow}</p>
                 </Row>
                 <Row>
-                    <ul>
                     {todoListItems.map(todo => {
                         return (
                             <TodoListItem
@@ -65,7 +69,6 @@ export const TodoListBase: React.SFC<TodoListProps> = ({
                                 onDelete={() => deleteItem(todo.id)} />
                         )
                     })}
-                    </ul>
                 </Row>
                 <Row>
                     <AddItem
