@@ -58,7 +58,7 @@ export const TodoListBase: React.SFC<TodoListProps> = ({
                     <h3>{todoListName}</h3>
                     <p>{dateNow}</p>
                 </Row>
-                <Row>
+                <Row className='TodoList'>
                     {todoListItems.map(todo => {
                         return (
                             <TodoListItem
