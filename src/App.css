@@ -15,6 +15,10 @@
   margin-bottom: 1.6rem;
 }
 
+.Completed {
+  text-decoration: line-through;
+}
+
 .Profile {
   display: flex;
   align-items: center;
